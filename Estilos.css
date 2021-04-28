@@ -1,0 +1,182 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.principal{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 50px 300px 200px 150px;
+}
+
+.Header{
+   background-color: black;
+   grid-column-start: 1;
+   grid-row-end: 2;
+   line-height: 50px;
+}
+
+.Menu{
+    background-color: red;
+    grid-column-start: 2;
+    grid-column-end: 4;
+    line-height: 50px;
+}
+
+.Hero{
+   background-color: royalblue;
+   grid-column: 1/4;
+   line-height: 300px;
+}
+
+.Main{
+    background-color: gray;
+    line-height: 200px;
+}
+
+.Null{
+    background-color: whitesmoke;
+}
+
+.cont{
+    display: grid;
+    
+    
+}
+
+.cont > .Image{
+    background-color: lightblue;
+    line-height: 100px;
+}
+
+.cont > .Extra{
+    background-color: lightgreen;
+    line-height: 100px;
+}
+
+.Banner{
+    background-color: goldenrod;
+    grid-column: 1/4;
+    line-height: 150px;
+}
+
+div{
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+/*MEDIA Queries*/
+
+@media only screen and (max-width: 540px){
+    .principal{
+        grid-template-rows: 100px 100px 100px 100px 100px;
+    } 
+    
+    .Header{
+        
+        grid-column: 1/4;
+        line-height: 100px;
+     }
+     
+     .Hero{
+        
+        grid-column: 1/4;
+        line-height: 100px;
+     }
+
+     .Menu{
+        
+        grid-column: 1/4;
+        line-height: 100px;
+    }
+     
+     .Main{
+         
+        grid-column: 1/4;
+        line-height: 100px;
+     }
+
+     .Banner{
+        grid-row-start: 5;
+        grid-row-end: 6;
+        grid-column: 1/4;
+        line-height: 100px;
+    }
+     
+    .cont{
+        grid-column: 1/4;
+    }
+
+     .Null{
+         
+         display: none;
+     }
+     
+     
+}
+
+@media only screen and (min-width: 541px) and (max-width: 720px){
+    .Header{
+        
+        grid-column: 1/4;
+        
+     }
+     
+     .Hero{
+        
+        grid-column: 1/4;
+        
+     }
+
+     .Menu{
+        
+        grid-row-start: 3;
+        grid-row-end: 6;
+        grid-column-start: 1;
+        grid-column-end: 2;
+        
+    }
+     
+     .Main{
+         
+         grid-row-start: 3;
+         grid-row-end: 4;
+         grid-column-start: 2;
+        grid-column-end: 4;
+         
+     }
+
+     .Banner{
+        
+        grid-row-start: 4;
+        grid-row-end: 5;
+        grid-column-start: 2;
+        grid-column-end: 4;
+        
+    }
+     
+    .cont{
+        display: grid;
+        grid-row-start: 5;
+        grid-row-end: 6;
+        grid-column-start: 2;
+        grid-column-end: 4;
+    }
+
+     .Null{
+         
+         display: none;
+     }
+     
+     .cont > .Image{
+         grid-column-start: 1;
+         grid-column-end: 3;
+     }
+     
+     .cont > .Extra{
+        grid-column-start: 3;
+        grid-column-end: 4;
+     }
+    
+}
